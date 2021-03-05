@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+body{
+    background:mediumblue;
+    background: linear-gradient(blue, rgb(199, 43, 199), red, orange , yellow, green, cyan);
+    font-family: 'Simonetta', cursive;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Ruthie', cursive;
+    font-size:60px;
+    color:white;
+    text-shadow: -3px 2px 0 black;
+    margin:10px;
+    padding-top:50px;    
+}
+
+p{
+    font-style:italic;
+    font-size:20px;
+    color:white;
+    padding-bottom:40px;
+}
+
+span{
+    font-family: 'Ruthie', cursive;
+    font-size:50px;
+    display:block;
+    text-align: center;
+    text-shadow:-3px 2px 0 #000;
+}
+
+.box{
+    background-color: whitesmoke;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px 30px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform:translateX(0);
+}
+
+.box h2{
+    font-size: 45;
+}
