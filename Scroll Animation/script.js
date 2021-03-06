@@ -2,10 +2,11 @@ const boxes = document.querySelectorAll ('.box');
 
 window.addEventListener('scroll', checkBoxes);
 
-checkBoxes();
+//To add some boxes to the beginning of the screen.
+//checkBoxes();
 
 function checkBoxes() {
-const triggerBottom = window.innerHeight / 5 * 3.5;
+const triggerBottom = window.innerHeight / 5 * 4;
    
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
